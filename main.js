@@ -1,7 +1,7 @@
 // Wakfu Builder — Frontend Application
-// Communique avec le backend Tauri via window.__TAURI__.core.invoke
+// Communique avec le backend Tauri via @tauri-apps/api (v2)
 
-const invoke = window.__TAURI__?.core?.invoke;
+import { invoke } from '@tauri-apps/api/core';
 
 // ===== State =====
 let allItems = [];
@@ -365,5 +365,27 @@ function renderResults(request) {
 }
 
 // ===== Init =====
-renderConfigPanel();
-loadItems();
+function init() {
+  try {
+    renderConfigPanel();
+    loadItems();
+  } catch (e) {
+    console.error('Init failed:', e);
+    setStatus('Erreur initialisation', 'error');
+    if (configPanel) {
+      configPanel.innerHTML = `
+        <div class="card">
+          <h3>Erreur</h3>
+          <p style="color: #e74c3c;">Impossible de charger l'interface : ${e.message || e}</p>
+          <pre style="font-size: 0.8em; margin-top: 8px; background: #1a1a2e; padding: 8px; border-radius: 4px; overflow-x: auto;">${e.stack || ''}</pre>
+        </div>
+      `;
+    }
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}

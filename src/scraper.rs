@@ -8,6 +8,32 @@ pub struct Scraper {
 }
 
 pub fn ensure_data_dir() -> Result<PathBuf> {
+    // Try current working directory first (common for CLI usage)
+    if let Ok(cwd) = std::env::current_dir() {
+        let dir = cwd.join("data");
+        if dir.exists() {
+            return Ok(dir);
+        }
+    }
+
+    // Try executable-relative path (common for Tauri/bundled usage)
+    if let Ok(exe) = std::env::current_exe() {
+        if let Some(exe_dir) = exe.parent() {
+            let dir = exe_dir.join("data");
+            if dir.exists() {
+                return Ok(dir);
+            }
+            // Try parent of exe dir (e.g., exe in src-tauri/target/debug/, data at project root)
+            if let Some(grandparent) = exe_dir.parent() {
+                let dir = grandparent.join("data");
+                if dir.exists() {
+                    return Ok(dir);
+                }
+            }
+        }
+    }
+
+    // Fallback: create data/ in CWD
     let dir = std::env::current_dir()?.join("data");
     std::fs::create_dir_all(&dir)?;
     Ok(dir)
