@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wakfu Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <h1>⚔️ Wakfu Builder</h1>
+      <span id="status-badge" class="badge badge-loading">Initialisation...</span>
+    </header>
+    <div class="main-layout">
+      <aside class="sidebar" id="config-panel">
+        <!-- Rempli dynamiquement par JS -->
+      </aside>
+      <main class="content" id="results-area">
+        <div class="empty-state">
+          <p>Configurez votre build et lancez l'optimisation</p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

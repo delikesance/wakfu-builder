@@ -19,3 +19,9 @@
 
 # Cache directory
 data/
+
+# Node / Frontend
+node_modules/
+
+# Tauri
+src-tauri/Cargo.lock

@@ -1,0 +1,15 @@
+{
+  "name": "wakfu-builder",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {
+    "dev": "npx sirv . --port 1420 --dev",
+    "build": "echo 'no build step'"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}

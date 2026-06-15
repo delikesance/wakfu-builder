@@ -1,6 +1,4 @@
-mod models;
-mod scraper;
-mod optimizer;
+use wakfu_builder::{models, scraper, optimizer};
 mod tui;
 
 use anyhow::Result;

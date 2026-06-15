@@ -3,6 +3,10 @@ name = "wakfu-builder"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "wakfu_builder"
+crate-type = ["lib", "cdylib", "staticlib"]
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 reqwest = { version = "0.12", features = ["json"] }

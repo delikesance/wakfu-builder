@@ -2,14 +2,29 @@
 
 pkgs.mkShell {
   buildInputs = with pkgs; [
-    rustc
-    cargo
-    pkg-config
+    # Rust toolchain
+    rustup
+    
+    # Node.js (npm included)
+    nodejs
+    
+    # Tauri v2 Linux system dependencies
+    webkitgtk_4_1
+    gtk3
+    libayatana-appindicator
     openssl
-    sqlite # For caching if we choose SQLite later
+    pkg-config
+    dbus
+    libsoup_3
   ];
 
   shellHook = ''
-    echo "Welcome to the Wakfu Builder development environment!"
+    echo "=== Wakfu-Builder Tauri Dev Shell ==="
+    echo "Rust: $(rustc --version 2>/dev/null || echo 'setup needed')"
+    echo "Node: $(node --version)"
+    echo "npm:  $(npm --version)"
+    echo ""
+    echo "If rust is not installed: rustup default stable"
+    echo "Tauri CLI:  cargo install tauri-cli --version '^2'"
   '';
 }
