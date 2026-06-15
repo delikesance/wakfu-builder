@@ -1,0 +1,6333 @@
+{
+  "actives": [
+    {
+      "ap_cost": 3,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 1,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175251,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4122,
+              "name_state": "Forteresse Solaire"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[st4122[#1]] (Niv. [#1])\\n[st4122li[#1]] ",
+          "pivot": {
+            "foreign_type": 5575,
+            "id_effect": 175251
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 175251,
+              "id_spell_effect_value": 1334524,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5575",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5575,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 2,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Forteresse solaire",
+      "ui_position": 1,
+      "unlock_level": 3,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -200,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 1,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348106,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] Soin [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348106
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 12,
+              "evolution": null,
+              "id_effect": 348106,
+              "id_spell_effect_value": 1334612,
+              "id_stats": 1084,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.33000001311302,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348107,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune1] : Double la valeur des bonus\\n[rune2] : [#charac AP] [#1] PA (1 tour)",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348107
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348107,
+              "id_spell_effect_value": 1334613,
+              "id_stats": 31,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 6,
+                "element": null,
+                "id_stats": 31,
+                "id_stats_type": 1,
+                "image_stats": "pa.webp",
+                "is_negative": null,
+                "name_stats": "PA",
+                "order": 1,
+                "order_stats": 2,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348110,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune3] : [#charac RES_IN_PERCENT] [#1] Résistance Élémentaire (1 tour)",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348110
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 40,
+              "evolution": null,
+              "id_effect": 348110,
+              "id_spell_effect_value": 1334614,
+              "id_stats": 80,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 80,
+                "id_stats_type": null,
+                "image_stats": "element_resistance.webp",
+                "is_negative": null,
+                "name_stats": "Résistance élémentaire",
+                "order": 33,
+                "order_stats": 0,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348113,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune4] : [#charac MP] [#1] PM (1 tour)",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348113
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348113,
+              "id_spell_effect_value": 1334615,
+              "id_stats": 41,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 3,
+                "element": null,
+                "id_stats": 41,
+                "id_stats_type": 1,
+                "image_stats": "pm.webp",
+                "is_negative": null,
+                "name_stats": "PM",
+                "order": 2,
+                "order_stats": 3,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348116,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\nLes runes sont consommées",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348116
+          },
+          "ui_position": 4,
+          "values": []
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348650,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] Soin [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348650
+          },
+          "ui_position": 5,
+          "values": [
+            {
+              "base": null,
+              "damage": 15,
+              "evolution": null,
+              "id_effect": 348650,
+              "id_spell_effect_value": 1334616,
+              "id_stats": 1084,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.41249999403954,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348651,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune1] : Double la valeur des bonus\\n[rune2] : [#charac AP] [#1] PA (1 tour)",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348651
+          },
+          "ui_position": 6,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348651,
+              "id_spell_effect_value": 1334617,
+              "id_stats": 31,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 6,
+                "element": null,
+                "id_stats": 31,
+                "id_stats_type": 1,
+                "image_stats": "pa.webp",
+                "is_negative": null,
+                "name_stats": "PA",
+                "order": 1,
+                "order_stats": 2,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348654,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune3] : [#charac RES_IN_PERCENT] [#1] Résistance Élémentaire (1 tour)",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348654
+          },
+          "ui_position": 7,
+          "values": [
+            {
+              "base": null,
+              "damage": 40,
+              "evolution": null,
+              "id_effect": 348654,
+              "id_spell_effect_value": 1334618,
+              "id_stats": 80,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 80,
+                "id_stats_type": null,
+                "image_stats": "element_resistance.webp",
+                "is_negative": null,
+                "name_stats": "Résistance élémentaire",
+                "order": 33,
+                "order_stats": 0,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348657,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune4] : [#charac MP] [#1] PM (1 tour)",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348657
+          },
+          "ui_position": 8,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348657,
+              "id_spell_effect_value": 1334619,
+              "id_stats": 41,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 3,
+                "element": null,
+                "id_stats": 41,
+                "id_stats_type": 1,
+                "image_stats": "pm.webp",
+                "is_negative": null,
+                "name_stats": "PM",
+                "order": 2,
+                "order_stats": 3,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348660,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "\\nLes runes sont consommées",
+          "pivot": {
+            "foreign_type": 7755,
+            "id_effect": 348660
+          },
+          "ui_position": 9,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "7755",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7755,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Surcharge runique",
+      "ui_position": 2,
+      "unlock_level": 15,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": -150,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175760,
+          "inner_ar": [
+            {
+              "id_ar": 1035,
+              "name_ar": "Mur d'énergie"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Pose [ar1035] (1 tour)",
+          "pivot": {
+            "foreign_type": 5576,
+            "id_effect": 175760
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5576",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5576,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Mur d'énergie",
+      "ui_position": 3,
+      "unlock_level": 30,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348501,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 756,
+              "name_state": "Incurable"
+            },
+            {
+              "id_state": 6624,
+              "name_state": "Friable"
+            },
+            {
+              "id_state": 3434,
+              "name_state": "Stabilisé"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Joue un sort sur la cible selon la dernière rune générée\\n[rune1] : [st756] (Niv.5) et 50 % Armure reçue\\n[rune2] : [st6624] (Niv.5) et 50 % Soins reçus\\n[rune3] : [st3434] (1 tour)\\n[rune4] : [enemy] -3 Portée [ally] 3 Portée (1 tour)",
+          "pivot": {
+            "foreign_type": 7754,
+            "id_effect": 348501
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "7754",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7754,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 4,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Visio Imperum",
+      "ui_position": 4,
+      "unlock_level": 45,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175262,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Joue un sort sur la cible selon la dernière rune générée\\n[rune1] : Échange de position avec le [caster]\\n[rune2] : Téléporte sur le [ar1049] le plus proche (max 6 cases)\\n[rune3] : Téléporte face au [caster]\\n[rune4] : Le lanceur se téléporte sur la case ciblée",
+          "pivot": {
+            "foreign_type": 5577,
+            "id_effect": 175262
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5577",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5577,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 6,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Principio Valere",
+      "ui_position": 5,
+      "unlock_level": 60,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 1,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350201,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[caster][#charac FINAL_DMG_IN_PERCENT] 10 % Dommages infligés par Rune (1 tour)\\n[caster][#charac FINAL_HEAL_IN_PERCENT] 10 % Soins réalisés par Rune (1 tour)\\n\\n[ally] Le bonus est réduit de moitié",
+          "pivot": {
+            "foreign_type": 7809,
+            "id_effect": 350201
+          },
+          "ui_position": 0,
+          "values": []
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350196,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\nLe sort coûte <b>40 BQ</b> par rune possédée\\nLes runes sont consommées",
+          "pivot": {
+            "foreign_type": 7809,
+            "id_effect": 350196
+          },
+          "ui_position": 1,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "7809",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7809,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Runification",
+      "ui_position": 6,
+      "unlock_level": 90,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174193,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4092,
+              "name_state": "Maîtrise d'Armes"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[st4092[#1]] (Niv. [#1])",
+          "pivot": {
+            "foreign_type": 5622,
+            "id_effect": 174193
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 100,
+              "evolution": null,
+              "id_effect": 174193,
+              "id_spell_effect_value": 1333673,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174194,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Passe son tour",
+          "pivot": {
+            "foreign_type": 5622,
+            "id_effect": 174194
+          },
+          "ui_position": 1,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5622",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5622,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Maîtrise d'Armes",
+      "ui_position": 11,
+      "unlock_level": 30,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 1,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174640,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[fighter] [#charac TACKLE] [#1] Tacle",
+          "pivot": {
+            "foreign_type": 5623,
+            "id_effect": 174640
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 150,
+              "evolution": null,
+              "id_effect": 174640,
+              "id_spell_effect_value": 1333666,
+              "id_stats": 173,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 173,
+                "id_stats_type": 4,
+                "image_stats": "tackle.webp",
+                "is_negative": null,
+                "name_stats": "Tacle",
+                "order": 7,
+                "order_stats": 8,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174185,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Attire de [#1] cases vers la [fighter][CROSS]",
+          "pivot": {
+            "foreign_type": 5623,
+            "id_effect": 174185
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 174185,
+              "id_spell_effect_value": 1333667,
+              "id_stats": 301,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5623",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5623,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 0,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Charme de Masse",
+      "ui_position": 12,
+      "unlock_level": 130,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 3,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 242315,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Invoque un Os à Moelle",
+          "pivot": {
+            "foreign_type": 6327,
+            "id_effect": 242315
+          },
+          "ui_position": 0,
+          "values": []
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 243489,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "En fin de tour du lanceur :\\n[pl]L'Os à Moelle perd 1 % PV max\\n[pl]Soin [el2] : |[#1]*[@lv]+[#2]| autour de l'Os à Moelle[CIRCLERING]",
+          "pivot": {
+            "foreign_type": 6327,
+            "id_effect": 243489
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 0.12,
+              "evolution": null,
+              "id_effect": 243489,
+              "id_spell_effect_value": 1333668,
+              "id_stats": 400,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 243489,
+              "id_spell_effect_value": 1333669,
+              "id_stats": 400,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "6327",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 6327,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Os à Moelle",
+      "ui_position": 13,
+      "unlock_level": 56,
+      "wp_cost": 0
+    }
+  ],
+  "elementaries": [
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350262,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el1] : [#1]",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 350262
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 350262,
+              "id_spell_effect_value": 1334588,
+              "id_stats": 2,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.25999999046326,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350263,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 7826,
+              "name_state": "Flux d'énergie"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune3] : [enemy] [st7826li[#1]] ",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 350263
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 350263,
+              "id_spell_effect_value": 1334589,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350264,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 7825,
+              "name_state": "Flux d'énergie"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune2] : [ally] [st7825li[#1]] ",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 350264
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 350264,
+              "id_spell_effect_value": 1334590,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 351500,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune4] : La zone devient [VLINE]",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 351500
+          },
+          "ui_position": 3,
+          "values": []
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350271,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el1] : [#1]",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 350271
+          },
+          "ui_position": 4,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 350271,
+              "id_spell_effect_value": 1334591,
+              "id_stats": 2,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.32499998807907,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350272,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 7826,
+              "name_state": "Flux d'énergie"
+            }
+          ],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune3] : [enemy] [st7826li[#1]] ",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 350272
+          },
+          "ui_position": 5,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 350272,
+              "id_spell_effect_value": 1334592,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350273,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 7825,
+              "name_state": "Flux d'énergie"
+            }
+          ],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune2] : [ally] [st7825li[#1]] ",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 350273
+          },
+          "ui_position": 6,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 350273,
+              "id_spell_effect_value": 1334593,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 351501,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune4] : La zone devient [VLINE]",
+          "pivot": {
+            "foreign_type": 5562,
+            "id_effect": 351501
+          },
+          "ui_position": 7,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5562",
+      "id_breed": 19,
+      "id_element": 1,
+      "id_spell": 5562,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Flux d'énergie",
+      "ui_position": 1,
+      "unlock_level": 1,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348400,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el1] : [#1]\\n\\nSi [caster] a exactement 3 runes :\\n[pl]La cible subit 10 % de dommages supplémentaire dans le dos (1 tour)\\n[pl][caster] Consomme toutes les runes",
+          "pivot": {
+            "foreign_type": 5571,
+            "id_effect": 348400
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348400,
+              "id_spell_effect_value": 1334562,
+              "id_stats": 2,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.23999999463558,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348558,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el1] : [#1]\\n\\nSi [caster] a exactement 3 runes :\\n[pl]La cible subit 10 % de dommages supplémentaire dans le dos (1 tour)\\n[pl][caster] Consomme toutes les runes",
+          "pivot": {
+            "foreign_type": 5571,
+            "id_effect": 348558
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348558,
+              "id_spell_effect_value": 1334563,
+              "id_stats": 2,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.30000001192093,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5571",
+      "id_breed": 19,
+      "id_element": 1,
+      "id_spell": 5571,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 5,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Disque luminescent",
+      "ui_position": 2,
+      "unlock_level": 5,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 4,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 173470,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1][VLINE]\\n[rune1] : La zone devient [CONE]\\n[rune2] : Le sort coûte 1 PA de moins\\n[rune3] : Les dommages passent sous l'Armure\\n[rune4] : Le sort ne possède plus de ligne de vue\\n\\nLe sort coûte 25 BQ supplémentaires par rune possédée",
+          "pivot": {
+            "foreign_type": 5561,
+            "id_effect": 173470
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 173470,
+              "id_spell_effect_value": 1334604,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.47999998927116,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348627,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1] [VLINE]\\n[rune1] : La zone devient [CONE]\\n[rune2] : Le sort coûte 1 PA de moins\\n[rune3] : Les dommages passent sous l'Armure\\n[rune4] : Le sort ne possède plus de ligne de vue\\n\\nLe sort coûte 25 BQ supplémentaires par rune possédée",
+          "pivot": {
+            "foreign_type": 5561,
+            "id_effect": 348627
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 348627,
+              "id_spell_effect_value": 1334605,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.60000002384186,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5561",
+      "id_breed": 19,
+      "id_element": 1,
+      "id_spell": 5561,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Résonance",
+      "ui_position": 3,
+      "unlock_level": 13,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -50,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348270,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el1] : [#1]\\nSi [caster] a [rune1] :\\nÀ la fin du tour du [caster] :\\n[pl]La cible subit 10 % de dommages supplémentaire dans l'élément de la dernière rune générée (1 tour)\\n[pl][caster] Consomme [rune1]",
+          "pivot": {
+            "foreign_type": 5563,
+            "id_effect": 348270
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348270,
+              "id_spell_effect_value": 1334610,
+              "id_stats": 2,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.25999999046326,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348568,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el1] : [#1]\\nSi [caster] a [rune1] :\\nÀ la fin du tour du [caster] :\\n[pl]La cible subit 10 % de dommages supplémentaire dans l'élément de la dernière rune générée (1 tour)\\n[pl][caster] Consomme [rune1]",
+          "pivot": {
+            "foreign_type": 5563,
+            "id_effect": 348568
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348568,
+              "id_spell_effect_value": 1334611,
+              "id_stats": 2,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.32499998807907,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5563",
+      "id_breed": 19,
+      "id_element": 1,
+      "id_spell": 5563,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Lueur de l'aube",
+      "ui_position": 4,
+      "unlock_level": 21,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 4,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348410,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 5591,
+            "id_effect": 348410
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 348410,
+              "id_spell_effect_value": 1334580,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.51999998092651,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350323,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\nSi [caster] a [rune1] :\\n[pl]0.5% Dommages supplémentaires par %BQ restante\\n[pl][caster] Consomme [rune1]",
+          "pivot": {
+            "foreign_type": 5591,
+            "id_effect": 350323
+          },
+          "ui_position": 1,
+          "values": []
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348634,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 5591,
+            "id_effect": 348634
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 348634,
+              "id_spell_effect_value": 1334581,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.64999997615814,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350325,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "\\nSi [caster] a [rune1] :\\n[pl]0.5% Dommages supplémentaires par %BQ restante\\n[pl][caster] Consomme [rune1]",
+          "pivot": {
+            "foreign_type": 5591,
+            "id_effect": 350325
+          },
+          "ui_position": 3,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5591",
+      "id_breed": 19,
+      "id_element": 1,
+      "id_spell": 5591,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 5,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Rayon crépusculaire",
+      "ui_position": 5,
+      "unlock_level": 29,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 1,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348319,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el2] : [#1]\\n[ally] Soin [el2] : [#2]\\n\\nÀ chaque lancer du sort :\\n[pl]Répète ses effets sur les cibles précédentes",
+          "pivot": {
+            "foreign_type": 5564,
+            "id_effect": 348319
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348319,
+              "id_spell_effect_value": 1334606,
+              "id_stats": 4,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.21999999880791,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 348319,
+              "id_spell_effect_value": 1334607,
+              "id_stats": 258,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0.10999999940395,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 1
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348584,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el2] : [#1]\\n[ally] Soin [el2] : [#2]\\n\\nÀ chaque lancer du sort :\\n[pl]Répète ses effets sur les cibles précédentes",
+          "pivot": {
+            "foreign_type": 5564,
+            "id_effect": 348584
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348584,
+              "id_spell_effect_value": 1334608,
+              "id_stats": 4,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.27500000596046,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 348584,
+              "id_spell_effect_value": 1334609,
+              "id_stats": 258,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0.13750000298023,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 1
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5564",
+      "id_breed": 19,
+      "id_element": 2,
+      "id_spell": 5564,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 5,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Averse",
+      "ui_position": 1,
+      "unlock_level": 1,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348293,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el2] : [#1]",
+          "pivot": {
+            "foreign_type": 5565,
+            "id_effect": 348293
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348293,
+              "id_spell_effect_value": 1334556,
+              "id_stats": 4,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.28000000119209,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348294,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] Soin [el2] : [#1]",
+          "pivot": {
+            "foreign_type": 5565,
+            "id_effect": 348294
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 348294,
+              "id_spell_effect_value": 1334557,
+              "id_stats": 258,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.14000000059605,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 1
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348295,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 3587,
+              "name_state": "Transparent"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\nSi [caster] a [rune2] :\\n[pl][st3587[#1]] (Niv. [#1])\\n[pl][caster] Consomme [rune2]",
+          "pivot": {
+            "foreign_type": 5565,
+            "id_effect": 348295
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348295,
+              "id_spell_effect_value": 1334558,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348591,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el2] : [#1]",
+          "pivot": {
+            "foreign_type": 5565,
+            "id_effect": 348591
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348591,
+              "id_spell_effect_value": 1334559,
+              "id_stats": 4,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.34999999403954,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348592,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] Soin [el2] : [#1]",
+          "pivot": {
+            "foreign_type": 5565,
+            "id_effect": 348592
+          },
+          "ui_position": 4,
+          "values": [
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 348592,
+              "id_spell_effect_value": 1334560,
+              "id_stats": 258,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.17499999701977,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 1
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348594,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 3587,
+              "name_state": "Transparent"
+            }
+          ],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "\\nSi [caster] a [rune2] :\\n[pl][st3587[#1]] (Niv. [#1])\\n[pl][caster] Consomme [rune2]",
+          "pivot": {
+            "foreign_type": 5565,
+            "id_effect": 348594
+          },
+          "ui_position": 5,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348594,
+              "id_spell_effect_value": 1334561,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5565",
+      "id_breed": 19,
+      "id_element": 2,
+      "id_spell": 5565,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Débâcle",
+      "ui_position": 2,
+      "unlock_level": 7,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 6,
+      "bq_cost": -200,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348411,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1]\\nEffet supplémentaire selon la dernière rune générée :\\n[rune1] : La zone d'effet devient [VLINE] (3)\\n[rune2] : Le sort coûte 1 PA de moins\\n[rune3] : [#charac ARMOR] -[#2] Armure avant d'infliger les dommages\\n[rune4] : Le sort n'a plus de restriction de lancer en ligne",
+          "pivot": {
+            "foreign_type": 5594,
+            "id_effect": 348411
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 9,
+              "evolution": null,
+              "id_effect": 348411,
+              "id_spell_effect_value": 1334520,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 1.2599999904633,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 100,
+              "evolution": null,
+              "id_effect": 348411,
+              "id_spell_effect_value": 1334521,
+              "id_stats": 1011,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 14.5,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348635,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1]\\nEffet supplémentaire selon la dernière rune générée :\\n[rune1] : La zone d'effet devient [VLINE] (3)\\n[rune2] : Le sort coûte 1 PA de moins\\n[rune3] : [#charac ARMOR] -[#2] Armure avant d'infliger les dommages\\n[rune4] : Le sort n'a plus de restriction de lancer en ligne",
+          "pivot": {
+            "foreign_type": 5594,
+            "id_effect": 348635
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 11.25,
+              "evolution": null,
+              "id_effect": 348635,
+              "id_spell_effect_value": 1334522,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 1.5625,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 125,
+              "evolution": null,
+              "id_effect": 348635,
+              "id_spell_effect_value": 1334523,
+              "id_stats": 1011,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 18.125,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5594",
+      "id_breed": 19,
+      "id_element": 2,
+      "id_spell": 5594,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 5,
+      "min_range": 2,
+      "mp_cost": 0,
+      "name_spell": "Flèche de lumière",
+      "ui_position": 3,
+      "unlock_level": 15,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -50,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348296,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el2] : [#1]\\n[ally] Soin [el2] : [#2]\\n[rune1] : [ally] 10 % Dommages infligés (1 tour)\\n[rune3] : [enemy] -10 % Dommages infligés (1 tour)\\n[rune4] : La zone passe en [CROSS] (1)\\n\\nNe peut cibler qu'un ennemi ou un [ar1049]",
+          "pivot": {
+            "foreign_type": 5566,
+            "id_effect": 348296
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348296,
+              "id_spell_effect_value": 1334552,
+              "id_stats": 4,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.28000000119209,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 348296,
+              "id_spell_effect_value": 1334553,
+              "id_stats": 258,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0.14000000059605,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 1
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348596,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el2] : [#1]\\n[ally] Soin [el2] : [#2]\\n[rune1] : [ally] 10 % Dommages infligés (1 tour)\\n[rune3] : [enemy] -10 % Dommages infligés (1 tour)\\n[rune4] : La zone passe en [CROSS] (1)\\n\\nNe peut cibler qu'un ennemi ou un [ar1049]",
+          "pivot": {
+            "foreign_type": 5566,
+            "id_effect": 348596
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348596,
+              "id_spell_effect_value": 1334554,
+              "id_stats": 4,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.34999999403954,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 348596,
+              "id_spell_effect_value": 1334555,
+              "id_stats": 258,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0.17499999701977,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 1
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5566",
+      "id_breed": 19,
+      "id_element": 2,
+      "id_spell": 5566,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 2,
+      "mp_cost": 0,
+      "name_spell": "Vestige",
+      "ui_position": 4,
+      "unlock_level": 23,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 3,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175229,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 5593,
+            "id_effect": 175229
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 3,
+              "evolution": null,
+              "id_effect": 175229,
+              "id_spell_effect_value": 1334594,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.38999998569489,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348121,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] Soin [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 5593,
+            "id_effect": 348121
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 6,
+              "evolution": null,
+              "id_effect": 348121,
+              "id_spell_effect_value": 1334595,
+              "id_stats": 1084,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.19499999284744,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 350327,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\nSi [caster] a [rune2] :\\n[pl][caster] Soin [el6] : [#1]\\n[pl][caster] Consomme [rune2]",
+          "pivot": {
+            "foreign_type": 5593,
+            "id_effect": 350327
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 6,
+              "evolution": null,
+              "id_effect": 350327,
+              "id_spell_effect_value": 1334596,
+              "id_stats": 1084,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.19499999284744,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348122,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 5593,
+            "id_effect": 348122
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": null,
+              "damage": 3.75,
+              "evolution": null,
+              "id_effect": 348122,
+              "id_spell_effect_value": 1334597,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.48750001192093,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348123,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] Soin [el6] : [#1]",
+          "pivot": {
+            "foreign_type": 5593,
+            "id_effect": 348123
+          },
+          "ui_position": 4,
+          "values": [
+            {
+              "base": null,
+              "damage": 7.5,
+              "evolution": null,
+              "id_effect": 348123,
+              "id_spell_effect_value": 1334598,
+              "id_stats": 1084,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.24375000596046,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350328,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "\\nSi [caster] a [rune2] :\\n[pl][caster] Soin [el6] : [#1]\\n[pl][caster] Consomme [rune2]",
+          "pivot": {
+            "foreign_type": 5593,
+            "id_effect": 350328
+          },
+          "ui_position": 5,
+          "values": [
+            {
+              "base": null,
+              "damage": 7.5,
+              "evolution": null,
+              "id_effect": 350328,
+              "id_spell_effect_value": 1334599,
+              "id_stats": 1084,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.24375000596046,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5593",
+      "id_breed": 19,
+      "id_element": 2,
+      "id_spell": 5593,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Larmes scintillantes",
+      "ui_position": 5,
+      "unlock_level": 31,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348379,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el3] : [#1]\\n[rune1] : Double la valeur des retraits\\n[rune2] : [#charac AP] -[#2] PA\\n[rune4] : [#charac MP] -[#3] PM",
+          "pivot": {
+            "foreign_type": 5567,
+            "id_effect": 348379
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348379,
+              "id_spell_effect_value": 1334574,
+              "id_stats": 3,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.25999999046326,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348379,
+              "id_spell_effect_value": 1334575,
+              "id_stats": 55,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348379,
+              "id_spell_effect_value": 1334576,
+              "id_stats": 48,
+              "offset": 2,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348605,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el3] : [#1]\\n[rune1] : Double la valeur des retraits\\n[rune2] : [#charac AP] -[#2] PA\\n[rune4] : [#charac MP] -[#3] PM",
+          "pivot": {
+            "foreign_type": 5567,
+            "id_effect": 348605
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348605,
+              "id_spell_effect_value": 1334577,
+              "id_stats": 3,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.32499998807907,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348605,
+              "id_spell_effect_value": 1334578,
+              "id_stats": 55,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 348605,
+              "id_spell_effect_value": 1334579,
+              "id_stats": 48,
+              "offset": 2,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5567",
+      "id_breed": 19,
+      "id_element": 3,
+      "id_spell": 5567,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Éboulement",
+      "ui_position": 1,
+      "unlock_level": 1,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175203,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el3] : [#1]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 175203
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 175203,
+              "id_spell_effect_value": 1334534,
+              "id_stats": 3,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.23999999463558,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 50,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 350218,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350218
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 1.8005000352859,
+              "evolution": null,
+              "id_effect": 350218,
+              "id_spell_effect_value": 1334535,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.7049999833107,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 100,
+          "container_min_level": 51,
+          "from_evolution": -1,
+          "id_effect": 350219,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350219
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": -35.700000762939,
+              "evolution": null,
+              "id_effect": 350219,
+              "id_spell_effect_value": 1334536,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 1.4400000572205,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 150,
+          "container_min_level": 101,
+          "from_evolution": -1,
+          "id_effect": 350220,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350220
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": null,
+              "damage": -179.70050048828,
+              "evolution": null,
+              "id_effect": 350220,
+              "id_spell_effect_value": 1334537,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 2.8800001144409,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 151,
+          "from_evolution": 0,
+          "id_effect": 350221,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350221
+          },
+          "ui_position": 4,
+          "values": [
+            {
+              "base": null,
+              "damage": -611.70001220703,
+              "evolution": null,
+              "id_effect": 350221,
+              "id_spell_effect_value": 1334538,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 5.7600002288818,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 50,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 348390,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 348390
+          },
+          "ui_position": 5,
+          "values": [
+            {
+              "base": null,
+              "damage": 1.8005000352859,
+              "evolution": null,
+              "id_effect": 348390,
+              "id_spell_effect_value": 1334539,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.7049999833107,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 100,
+          "container_min_level": 51,
+          "from_evolution": -1,
+          "id_effect": 348391,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 348391
+          },
+          "ui_position": 6,
+          "values": [
+            {
+              "base": null,
+              "damage": -35.700000762939,
+              "evolution": null,
+              "id_effect": 348391,
+              "id_spell_effect_value": 1334540,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 1.4400000572205,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 150,
+          "container_min_level": 101,
+          "from_evolution": -1,
+          "id_effect": 348392,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 348392
+          },
+          "ui_position": 7,
+          "values": [
+            {
+              "base": null,
+              "damage": -179.70050048828,
+              "evolution": null,
+              "id_effect": 348392,
+              "id_spell_effect_value": 1334541,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 2.8800001144409,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 151,
+          "from_evolution": 0,
+          "id_effect": 348393,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 348393
+          },
+          "ui_position": 8,
+          "values": [
+            {
+              "base": null,
+              "damage": -611.70001220703,
+              "evolution": null,
+              "id_effect": 348393,
+              "id_spell_effect_value": 1334542,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 5.7600002288818,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349432,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el3] : [#1]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 349432
+          },
+          "ui_position": 9,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 349432,
+              "id_spell_effect_value": 1334543,
+              "id_stats": 3,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.30000001192093,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 50,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 350373,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350373
+          },
+          "ui_position": 10,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.2506248950958,
+              "evolution": null,
+              "id_effect": 350373,
+              "id_spell_effect_value": 1334544,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.88125002384186,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 100,
+          "container_min_level": 51,
+          "from_evolution": -1,
+          "id_effect": 350374,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350374
+          },
+          "ui_position": 11,
+          "values": [
+            {
+              "base": null,
+              "damage": -44.625,
+              "evolution": null,
+              "id_effect": 350374,
+              "id_spell_effect_value": 1334545,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 1.7999999523163,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 150,
+          "container_min_level": 101,
+          "from_evolution": -1,
+          "id_effect": 350375,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350375
+          },
+          "ui_position": 12,
+          "values": [
+            {
+              "base": null,
+              "damage": -224.62562561035,
+              "evolution": null,
+              "id_effect": 350375,
+              "id_spell_effect_value": 1334546,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 3.5999999046326,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 151,
+          "from_evolution": 0,
+          "id_effect": 350376,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[ally] [#charac ARMOR] [#1] Armure",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 350376
+          },
+          "ui_position": 13,
+          "values": [
+            {
+              "base": null,
+              "damage": -764.625,
+              "evolution": null,
+              "id_effect": 350376,
+              "id_spell_effect_value": 1334547,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 7.1999998092651,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 50,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 349441,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 349441
+          },
+          "ui_position": 14,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.2506248950958,
+              "evolution": null,
+              "id_effect": 349441,
+              "id_spell_effect_value": 1334548,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.88125002384186,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 100,
+          "container_min_level": 51,
+          "from_evolution": -1,
+          "id_effect": 349442,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 349442
+          },
+          "ui_position": 15,
+          "values": [
+            {
+              "base": null,
+              "damage": -44.625,
+              "evolution": null,
+              "id_effect": 349442,
+              "id_spell_effect_value": 1334549,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 1.7999999523163,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 150,
+          "container_min_level": 101,
+          "from_evolution": -1,
+          "id_effect": 349443,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 349443
+          },
+          "ui_position": 16,
+          "values": [
+            {
+              "base": null,
+              "damage": -224.62562561035,
+              "evolution": null,
+              "id_effect": 349443,
+              "id_spell_effect_value": 1334550,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 3.5999999046326,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 151,
+          "from_evolution": 0,
+          "id_effect": 349444,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[caster] [#charac ARMOR] [#1] Armure\\n\\nSi [caster] a [rune3] :\\n[pl]L'armure est doublée\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5569,
+            "id_effect": 349444
+          },
+          "ui_position": 17,
+          "values": [
+            {
+              "base": null,
+              "damage": -764.625,
+              "evolution": null,
+              "id_effect": 349444,
+              "id_spell_effect_value": 1334551,
+              "id_stats": 1013,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 7.1999998092651,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "6400",
+      "id_breed": 19,
+      "id_element": 3,
+      "id_spell": 5569,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Faille",
+      "ui_position": 2,
+      "unlock_level": 9,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 4,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348420,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1][VLINE]\\nSi un [ar1049] est dans la zone :\\n[pl]Les dommages sont propagés dessus en [HLINE] (5)\\n\\nSi [caster] a [rune3] :\\n[pl][caster] 20 % vie volée et convertie en Armure\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5597,
+            "id_effect": 348420
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 4,
+              "evolution": null,
+              "id_effect": 348420,
+              "id_spell_effect_value": 1334564,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.51999998092651,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348642,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Dommage [el6] : [#1][VLINE]\\nSi un [ar1049] est dans la zone :\\n[pl]Les dommages sont propagés dessus en [HLINE] (5)\\n\\nSi [caster] a [rune3] :\\n[pl][caster] 20 % vie volée et convertie en Armure\\n[pl][caster] Consomme [rune3]",
+          "pivot": {
+            "foreign_type": 5597,
+            "id_effect": 348642
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 348642,
+              "id_spell_effect_value": 1334565,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.64999997615814,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5597",
+      "id_breed": 19,
+      "id_element": 3,
+      "id_spell": 5597,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 1,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Faisceau de lune",
+      "ui_position": 3,
+      "unlock_level": 17,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -50,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 254539,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el3] : [#1]\\n[enemy] [#charac MP] -[#2] PM\\n\\n[caster][#charac WILLPOWER] +10 Volonté par rune possédée pour la durée du sort",
+          "pivot": {
+            "foreign_type": 5568,
+            "id_effect": 254539
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 254539,
+              "id_spell_effect_value": 1334566,
+              "id_stats": 3,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.23999999463558,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 254539,
+              "id_spell_effect_value": 1334567,
+              "id_stats": 48,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348613,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el3] : [#1]\\n[enemy] [#charac MP] -[#2] PM\\n\\n[caster][#charac WILLPOWER] +10 Volonté par rune possédée pour la durée du sort",
+          "pivot": {
+            "foreign_type": 5568,
+            "id_effect": 348613
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348613,
+              "id_spell_effect_value": 1334568,
+              "id_stats": 3,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.30000001192093,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 348613,
+              "id_spell_effect_value": 1334569,
+              "id_stats": 48,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5568",
+      "id_breed": 19,
+      "id_element": 3,
+      "id_spell": 5568,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 1,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Feuillure",
+      "ui_position": 4,
+      "unlock_level": 25,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -100,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175232,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Deux fois : Dommage [el6] : [#1][HLINE]\\n[pl]Par Rune : Vole [#2] % des Dommages infligés[HLINE]",
+          "pivot": {
+            "foreign_type": 5595,
+            "id_effect": 175232
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 175232,
+              "id_spell_effect_value": 1334600,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.20000000298023,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 30,
+              "evolution": null,
+              "id_effect": 175232,
+              "id_spell_effect_value": 1334601,
+              "id_stats": 865,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175688,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Deux fois : Dommage [el6] : [#1][HLINE]\\n[pl]Par Rune : Vole [#2] % des Dommages infligés[HLINE]",
+          "pivot": {
+            "foreign_type": 5595,
+            "id_effect": 175688
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 175688,
+              "id_spell_effect_value": 1334602,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.25,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 30,
+              "evolution": null,
+              "id_effect": 175688,
+              "id_spell_effect_value": 1334603,
+              "id_stats": 865,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5595",
+      "id_breed": 19,
+      "id_element": 3,
+      "id_spell": 5595,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 1,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Épée de lumière",
+      "ui_position": 5,
+      "unlock_level": 33,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 173482,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el4] : [#1]",
+          "pivot": {
+            "foreign_type": 5570,
+            "id_effect": 173482
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 173482,
+              "id_spell_effect_value": 1334582,
+              "id_stats": 5,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.25999999046326,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 254526,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[rune1] : Double la valeur des déplacements\\n[rune2] : Attire de [#1] case\\n[rune3] : Pousse de [#2] case\\n",
+          "pivot": {
+            "foreign_type": 5570,
+            "id_effect": 254526
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 254526,
+              "id_spell_effect_value": 1334583,
+              "id_stats": 301,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 254526,
+              "id_spell_effect_value": 1334584,
+              "id_stats": 300,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175703,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el4] : [#1]",
+          "pivot": {
+            "foreign_type": 5570,
+            "id_effect": 175703
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 175703,
+              "id_spell_effect_value": 1334585,
+              "id_stats": 5,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.32499998807907,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 254529,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[rune1] : Double la valeur des déplacements\\n[rune2] : Attire de [#1] case\\n[rune3] : Pousse de [#2] case\\n",
+          "pivot": {
+            "foreign_type": 5570,
+            "id_effect": 254529
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 254529,
+              "id_spell_effect_value": 1334586,
+              "id_stats": 301,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 1,
+              "evolution": null,
+              "id_effect": 254529,
+              "id_spell_effect_value": 1334587,
+              "id_stats": 300,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5570",
+      "id_breed": 19,
+      "id_element": 4,
+      "id_spell": 5570,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Papillons diurnes",
+      "ui_position": 1,
+      "unlock_level": 3,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175244,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el4] : [#1]",
+          "pivot": {
+            "foreign_type": 5572,
+            "id_effect": 175244
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 175244,
+              "id_spell_effect_value": 1334572,
+              "id_stats": 5,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.23999999463558,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350459,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\nTéléporte la cible 2 cases plus loin\\n\\nSi [caster] possède exactement 2 Runes :\\n[pl]Téléporte la cible 4 cases plus loin\\n[pl][caster] Consomme toutes les Runes",
+          "pivot": {
+            "foreign_type": 5572,
+            "id_effect": 350459
+          },
+          "ui_position": 1,
+          "values": []
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175583,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Dommage [el4] : [#1]",
+          "pivot": {
+            "foreign_type": 5572,
+            "id_effect": 175583
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 175583,
+              "id_spell_effect_value": 1334573,
+              "id_stats": 5,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.30000001192093,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350479,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "\\nTéléporte la cible 2 cases plus loin\\n\\nSi [caster] possède exactement 2 Runes :\\n[pl]Téléporte la cible 4 cases plus loin\\n[pl][caster] Consomme toutes les Runes",
+          "pivot": {
+            "foreign_type": 5572,
+            "id_effect": 350479
+          },
+          "ui_position": 3,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5572",
+      "id_breed": 19,
+      "id_element": 4,
+      "id_spell": 5572,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Ombres dansantes",
+      "ui_position": 2,
+      "unlock_level": 11,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 3,
+      "bq_cost": -100,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": -1,
+          "id_effect": 175541,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Deux fois : Dommage [el6] : [#1]\\n[ally] Deux fois : Soin [el6] : [#2]\\n\\nSi lancé sur [ar1049] la zone devient [CROSS] (1)",
+          "pivot": {
+            "foreign_type": 5590,
+            "id_effect": 175541
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 175541,
+              "id_spell_effect_value": 1334525,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.25,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 5,
+              "evolution": null,
+              "id_effect": 175541,
+              "id_spell_effect_value": 1334526,
+              "id_stats": 1084,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0.125,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350311,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4126,
+              "name_state": "Abondance"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "\\n[caster] [st4126[#1]] (+[#1] Niv.) par Rune possédée",
+          "pivot": {
+            "foreign_type": 5590,
+            "id_effect": 350311
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 10,
+              "evolution": null,
+              "id_effect": 350311,
+              "id_spell_effect_value": 1334527,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175542,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[enemy] Deux fois : Dommage [el6] : [#1]\\n[ally] Deux fois : Soin [el6] : [#2]\\n\\nSi lancé sur [ar1049] la zone devient [CROSS] (1)",
+          "pivot": {
+            "foreign_type": 5590,
+            "id_effect": 175542
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": null,
+              "damage": 3.125,
+              "evolution": null,
+              "id_effect": 175542,
+              "id_spell_effect_value": 1334528,
+              "id_stats": 1083,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.3125,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            },
+            {
+              "base": null,
+              "damage": 6.25,
+              "evolution": null,
+              "id_effect": 175542,
+              "id_spell_effect_value": 1334529,
+              "id_stats": 1084,
+              "offset": 1,
+              "random_number": 0,
+              "ratio": 0.15625,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350316,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4126,
+              "name_state": "Abondance"
+            }
+          ],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "\\n[caster] [st4126[#1]] (+[#1] Niv.) par Rune possédée",
+          "pivot": {
+            "foreign_type": 5590,
+            "id_effect": 350316
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": null,
+              "damage": 10,
+              "evolution": null,
+              "id_effect": 350316,
+              "id_spell_effect_value": 1334530,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5590",
+      "id_breed": 19,
+      "id_element": 4,
+      "id_spell": 5590,
+      "is_passive": 0,
+      "is_zone": 1,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Orbes luisants",
+      "ui_position": 3,
+      "unlock_level": 19,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -50,
+      "cast_diag": 0,
+      "cast_line": 1,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 175236,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Echange de position\\n[enemy] Dommage [el4] : [#1]\\n\\nSi [caster] a [rune4] :\\n[pl]La portée min et max du sort augmente de 3\\n[pl][caster] Consomme [rune4]",
+          "pivot": {
+            "foreign_type": 5596,
+            "id_effect": 175236
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 2,
+              "evolution": null,
+              "id_effect": 175236,
+              "id_spell_effect_value": 1334570,
+              "id_stats": 5,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.23999999463558,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348621,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "Echange de position\\n[enemy] Dommage [el4] : [#1]\\n\\nSi [caster] a [rune4] :\\n[pl]La portée min et max du sort augmente de 3\\n[pl][caster] Consomme [rune4]",
+          "pivot": {
+            "foreign_type": 5596,
+            "id_effect": 348621
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 2.5,
+              "evolution": null,
+              "id_effect": 348621,
+              "id_spell_effect_value": 1334571,
+              "id_stats": 5,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.30000001192093,
+              "statistics": null,
+              "will_calculate_damage": 1,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5596",
+      "id_breed": 19,
+      "id_element": 4,
+      "id_spell": 5596,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 3,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Mirage",
+      "ui_position": 4,
+      "unlock_level": 27,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 2,
+      "bq_cost": -50,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 1,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 348430,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4120,
+              "name_state": "Halo Chatoyant"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[st4120[#1]] (Niv. [#1])\\n[st4120li[#1]] \\n\\nSi [caster] a [rune4] :\\n[pl]La marque se déclenche instantanément\\n[pl][caster] Consomme [rune4]",
+          "pivot": {
+            "foreign_type": 5592,
+            "id_effect": 348430
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": null,
+              "damage": 3,
+              "evolution": null,
+              "id_effect": 348430,
+              "id_spell_effect_value": 1334620,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.38999998569489,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350346,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4120,
+              "name_state": "Halo Chatoyant"
+            }
+          ],
+          "is_critical": 1,
+          "is_use_effect": 0,
+          "name_effect": "[st4120[#1]] (Niv. [#1])\\n[st4120li[#1]] \\n\\nSi [caster] a [rune4] :\\n[pl]La marque se déclenche instantanément\\n[pl][caster] Consomme [rune4]",
+          "pivot": {
+            "foreign_type": 5592,
+            "id_effect": 350346
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": null,
+              "damage": 3.75,
+              "evolution": null,
+              "id_effect": 350346,
+              "id_spell_effect_value": 1334621,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": 0.48750001192093,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5592",
+      "id_breed": 19,
+      "id_element": 4,
+      "id_spell": 5592,
+      "is_passive": 0,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 4,
+      "min_range": 1,
+      "mp_cost": 0,
+      "name_spell": "Halo Chatoyant",
+      "ui_position": 5,
+      "unlock_level": 35,
+      "wp_cost": 0
+    }
+  ],
+  "passives": [
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349503,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Les Runes disparaissent en fin de tour",
+          "pivot": {
+            "foreign_type": 5579,
+            "id_effect": 349503
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5579",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5579,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Dynamo",
+      "ui_position": 1,
+      "unlock_level": 10,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349287,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "À chaque génération de Rune :\\n[pl][caster] +20 BQ\\n\\n-10 % Dommages infligés sur les sorts [el1][el2][el3][el4]",
+          "pivot": {
+            "foreign_type": 7802,
+            "id_effect": 349287
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5581",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7802,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Antithèse",
+      "ui_position": 2,
+      "unlock_level": 10,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350525,
+          "inner_ar": [],
+          "inner_spells": [
+            {
+              "id_spell": 5573,
+              "name_spell": "Cœur de Lumière"
+            }
+          ],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Lorsque [caster] est sous [sp5573] :\\n[pl]Les sorts [el1][el2][el3][el4] liés au Coeur gagnent 2 de Portée",
+          "pivot": {
+            "foreign_type": 5581,
+            "id_effect": 350525
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5347",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5581,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Distension Élémentaire",
+      "ui_position": 4,
+      "unlock_level": 15,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350527,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Lorsque [caster] invoque un [ar1049] :\\n[pl]Échange de position avec",
+          "pivot": {
+            "foreign_type": 5582,
+            "id_effect": 350527
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "7107",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5582,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Liaison Lumineuse",
+      "ui_position": 5,
+      "unlock_level": 20,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349344,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4126,
+              "name_state": "Abondance"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "En consommant un [ar1049] :\\n[pl][caster] Ne récupère pas de Rune\\n[pl][caster] [st4126] (+25 Niveaux)",
+          "pivot": {
+            "foreign_type": 5585,
+            "id_effect": 349344
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5585",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5585,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Plénitude",
+      "ui_position": 7,
+      "unlock_level": 25,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349785,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Les Runes possédées en fin de tour offrent un bonus :\\n[rune1] : [caster] 15 % Dommages infligés (1 tour)\\n[rune2] : [caster] 15 % Soins réalisés (1 tour)\\n[rune3] : [caster] 75 Résistance élémentaire (1 tour)\\n[rune4] : [caster] 2 Portée (1 tour)\\n\\n[caster] -50 BQ par rune possédée",
+          "pivot": {
+            "foreign_type": 5583,
+            "id_effect": 349785
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5583",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5583,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Universalité",
+      "ui_position": 8,
+      "unlock_level": 30,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349309,
+          "inner_ar": [],
+          "inner_spells": [
+            {
+              "id_spell": 5573,
+              "name_spell": "Cœur de Lumière"
+            }
+          ],
+          "inner_states": [
+            {
+              "id_state": 7912,
+              "name_state": "Régénération incandescente"
+            },
+            {
+              "id_state": 7913,
+              "name_state": "Régénération aquatique"
+            },
+            {
+              "id_state": 7914,
+              "name_state": "Régénération tellurique"
+            },
+            {
+              "id_state": 7915,
+              "name_state": "Régénération aérienne"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Sous [sp5573], l'Huppermage possède une régénération de BQ active, dépendante de l'élément :\\n[pl][rune1] [st7912]\\n[pl][rune2] [st7913]\\n[pl][rune3] [st7914]\\n[pl][rune4] [st7915]\\n\\n[sp5573] dure 2 tours",
+          "pivot": {
+            "foreign_type": 7797,
+            "id_effect": 349309
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5584",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7797,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Extension des sens",
+      "ui_position": 10,
+      "unlock_level": 35,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350667,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4126,
+              "name_state": "Abondance"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "En fin de tour :\\n[pl][st4126[#1]] (+[#1] Niv.) par Rune possédée",
+          "pivot": {
+            "foreign_type": 5586,
+            "id_effect": 350667
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 15,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 350667,
+              "id_spell_effect_value": 1334519,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350670,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Les gains de BQ sont diminués de 20 %",
+          "pivot": {
+            "foreign_type": 5586,
+            "id_effect": 350670
+          },
+          "ui_position": 1,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5586",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5586,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Profusion Runique",
+      "ui_position": 11,
+      "unlock_level": 40,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350528,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac WILLPOWER] [#1] Volonté",
+          "pivot": {
+            "foreign_type": 5587,
+            "id_effect": 350528
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 20,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 350528,
+              "id_spell_effect_value": 1334531,
+              "id_stats": 177,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 177,
+                "id_stats_type": 4,
+                "image_stats": "will.webp",
+                "is_negative": null,
+                "name_stats": "Volonté",
+                "order": 41,
+                "order_stats": 13,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350529,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Lorsque [caster] effectue un retrait (PA, PM, PO) :\\n[pl][#1] Brise Quadramentale\\n\\n-10 % Dommages infligés par les sorts [el6]",
+          "pivot": {
+            "foreign_type": 5587,
+            "id_effect": 350529
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 20,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 350529,
+              "id_spell_effect_value": 1334532,
+              "id_stats": 1085,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "7193",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5587,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Absorption Quadramentale",
+      "ui_position": 12,
+      "unlock_level": 45,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350534,
+          "inner_ar": [],
+          "inner_spells": [
+            {
+              "id_spell": 5573,
+              "name_spell": "Cœur de Lumière"
+            }
+          ],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[sp5573] peut être lancé 4 fois par tour\\n\\nLe bonus de maîtrise élémentaire sous [sp5573] est perdu",
+          "pivot": {
+            "foreign_type": 5588,
+            "id_effect": 350534
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5588",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5588,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Réfraction Élémentaire",
+      "ui_position": 13,
+      "unlock_level": 50,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350535,
+          "inner_ar": [],
+          "inner_spells": [
+            {
+              "id_spell": 5573,
+              "name_spell": "Cœur de Lumière"
+            }
+          ],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "En [sp5573] :\\n[pl][caster] 15 % Soins réalisés supplémentaires\\n[pl][caster] Le bonus de Dommages infligés est perdu\\n[pl][caster] En soignant un allié : +20 BQ par PA du sort",
+          "pivot": {
+            "foreign_type": 7804,
+            "id_effect": 350535
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5455",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7804,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Altruisme de l'âme",
+      "ui_position": 15,
+      "unlock_level": 55,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349131,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [
+            {
+              "id_spell": 5574,
+              "name_spell": "Feu-follet"
+            }
+          ],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Augmente de 3 la portée du sort [sp5574]\\n\\nAu lancement du sort, si un [ar1049] est déjà sur le terrain :\\n[pl]Déplace le Feu Follet \\n\\n1 [ar1049] maximum",
+          "pivot": {
+            "foreign_type": 7805,
+            "id_effect": 349131
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5582",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7805,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Nouveau souffle",
+      "ui_position": 16,
+      "unlock_level": 60,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349315,
+          "inner_ar": [],
+          "inner_spells": [
+            {
+              "id_spell": 5573,
+              "name_spell": "Cœur de Lumière"
+            }
+          ],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Sous [sp5573] :\\n[pl][caster] -100 Résistance dans l'élément du Coeur de Lumière\\n[pl][caster] 100 Résistance dans les autres éléments\\n[pl]La maîtrise élémentaire est augmentée de 10 % (au lieu de 20)",
+          "pivot": {
+            "foreign_type": 7803,
+            "id_effect": 349315
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5454",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7803,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Essor de l'âme",
+      "ui_position": 18,
+      "unlock_level": 65,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 349340,
+          "inner_ar": [
+            {
+              "id_ar": 1049,
+              "name_ar": "Feu-Follet"
+            }
+          ],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Lorsque [caster] invoque le [ar1049] :\\n[pl]Attire de 2 cases les cibles alignées à 5 cases autour\\n\\nLorsque [caster] récupère le [ar1049] :\\n[pl]Repousse de 2 cases les cibles alignées à 5 cases autour",
+          "pivot": {
+            "foreign_type": 7801,
+            "id_effect": 349340
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "7191",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7801,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Pulsation",
+      "ui_position": 19,
+      "unlock_level": 70,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350536,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Si [caster] possède exactement 1 Rune :\\n[pl]Sauvegarde les 3 autres Runes sur le Feu Follet en l'invoquant\\n\\nFeu Follet passe à 1 utilisation par tour",
+          "pivot": {
+            "foreign_type": 5584,
+            "id_effect": 350536
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "4300",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5584,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Sauvegarde Runique",
+      "ui_position": 21,
+      "unlock_level": 75,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350551,
+          "inner_ar": [],
+          "inner_spells": [
+            {
+              "id_spell": 5573,
+              "name_spell": "Cœur de Lumière"
+            }
+          ],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Si [sp5573] est le premier sort lancé dans le tour : [caster] [#charac AP] [#1] PA\\n\\nLes maîtrises élémentaires autres que celle du [sp5573] sont fixées à 0",
+          "pivot": {
+            "foreign_type": 5580,
+            "id_effect": 350551
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 2,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 350551,
+              "id_spell_effect_value": 1334518,
+              "id_stats": 31,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 6,
+                "element": null,
+                "id_stats": 31,
+                "id_stats_type": 1,
+                "image_stats": "pa.webp",
+                "is_negative": null,
+                "name_stats": "PA",
+                "order": 1,
+                "order_stats": 2,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5132",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 5580,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Initiative de l'âme",
+      "ui_position": 23,
+      "unlock_level": 80,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350654,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 7773,
+              "name_state": "Rune némésis"
+            },
+            {
+              "id_state": 4126,
+              "name_state": "Abondance"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Si [caster] génère une [st7773] à la dernière rune générée :\\n[pl][st4126[#1]] (+[#1] Niv.)\\n\\n[st4126] est limité à 60 niveaux",
+          "pivot": {
+            "foreign_type": 7800,
+            "id_effect": 350654
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 15,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 350654,
+              "id_spell_effect_value": 1334533,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5348",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7800,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Combinaison Élémentaire",
+      "ui_position": 24,
+      "unlock_level": 85,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 350626,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Si [caster] a ses 4 Runes :\\n[pl][caster] Les gains de BQ sont doublés\\n\\nSinon :\\n[pl][caster] Les gains de BQ sont réduits de moitié",
+          "pivot": {
+            "foreign_type": 7798,
+            "id_effect": 350626
+          },
+          "ui_position": 0,
+          "values": []
+        }
+      ],
+      "evolution_level": null,
+      "gfx_id": "5587",
+      "id_breed": 19,
+      "id_element": null,
+      "id_spell": 7798,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 1,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Transcendance Runique",
+      "ui_position": 25,
+      "unlock_level": 90,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 155358,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "100 % du niveau en Esquive",
+          "pivot": {
+            "foreign_type": 4957,
+            "id_effect": 155358
+          },
+          "ui_position": 0,
+          "values": []
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 159867,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Après avoir esquivé (avec pertes) :\\n[pl]35 % du niveau en Esquive (3 tours)",
+          "pivot": {
+            "foreign_type": 4957,
+            "id_effect": 159867
+          },
+          "ui_position": 1,
+          "values": []
+        }
+      ],
+      "evolution_level": 105,
+      "gfx_id": "4957",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 4957,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Evasion",
+      "ui_position": 0,
+      "unlock_level": 10,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 393738,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "100 % du niveau en Tacle",
+          "pivot": {
+            "foreign_type": 4958,
+            "id_effect": 393738
+          },
+          "ui_position": 0,
+          "values": []
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 393739,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Après avoir taclé une [fighter] :\\n[pl]35 % du niveau en Tacle (3 tours)",
+          "pivot": {
+            "foreign_type": 4958,
+            "id_effect": 393739
+          },
+          "ui_position": 1,
+          "values": []
+        }
+      ],
+      "evolution_level": 115,
+      "gfx_id": "4958",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 4958,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Interception",
+      "ui_position": 3,
+      "unlock_level": 15,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 155355,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "50 % du niveau en Initiative",
+          "pivot": {
+            "foreign_type": 4956,
+            "id_effect": 155355
+          },
+          "ui_position": 0,
+          "values": []
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 159871,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#1] % Dommages infligés aux [fighter] ayant plus d'Initiative",
+          "pivot": {
+            "foreign_type": 4956,
+            "id_effect": 159871
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 10,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 159871,
+              "id_spell_effect_value": 1333658,
+              "id_stats": 1093,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": 125,
+      "gfx_id": "4956",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 4956,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Inspiration",
+      "ui_position": 6,
+      "unlock_level": 25,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 162076,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac AP] [#1] PA",
+          "pivot": {
+            "foreign_type": 5237,
+            "id_effect": 162076
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 1,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 162076,
+              "id_spell_effect_value": 1333659,
+              "id_stats": 31,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 6,
+                "element": null,
+                "id_stats": 31,
+                "id_stats_type": 1,
+                "image_stats": "pa.webp",
+                "is_negative": null,
+                "name_stats": "PA",
+                "order": 1,
+                "order_stats": 2,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178127,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_DMG_IN_PERCENT] -[#1] % Dommages infligés",
+          "pivot": {
+            "foreign_type": 5237,
+            "id_effect": 178127
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 20,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178127,
+              "id_spell_effect_value": 1333660,
+              "id_stats": 129,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 129,
+                "id_stats_type": null,
+                "image_stats": "damage.webp",
+                "is_negative": 1,
+                "name_stats": "-Dommages Infligés",
+                "order": 43,
+                "order_stats": 1,
+                "parent_statistic_id": 126,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 162080,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac WILLPOWER] [#1] Volonté",
+          "pivot": {
+            "foreign_type": 5237,
+            "id_effect": 162080
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": 10,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 162080,
+              "id_spell_effect_value": 1333661,
+              "id_stats": 177,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 177,
+                "id_stats_type": 4,
+                "image_stats": "will.webp",
+                "is_negative": null,
+                "name_stats": "Volonté",
+                "order": 41,
+                "order_stats": 13,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": 135,
+      "gfx_id": "5237",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5237,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Motivation",
+      "ui_position": 9,
+      "unlock_level": 35,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178132,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_HEAL_IN_PERCENT] [#1] % Soins réalisés",
+          "pivot": {
+            "foreign_type": 5146,
+            "id_effect": 178132
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 30,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178132,
+              "id_spell_effect_value": 1333670,
+              "id_stats": 1095,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 1095,
+                "id_stats_type": 4,
+                "image_stats": "healing_done.webp",
+                "is_negative": null,
+                "name_stats": "Soins réalisés",
+                "order": 44,
+                "order_stats": 2,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 177970,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac ARMOR_GIVEN] [#1] % Armure donnée",
+          "pivot": {
+            "foreign_type": 5146,
+            "id_effect": 177970
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 25,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 177970,
+              "id_spell_effect_value": 1333671,
+              "id_stats": 40,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 40,
+                "id_stats_type": 2,
+                "image_stats": "given_armor.webp",
+                "is_negative": null,
+                "name_stats": "Armure donnée",
+                "order": 1,
+                "order_stats": 1,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 1
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178133,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_DMG_IN_PERCENT] -[#1] % Dommages infligés",
+          "pivot": {
+            "foreign_type": 5146,
+            "id_effect": 178133
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": 15,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178133,
+              "id_spell_effect_value": 1333672,
+              "id_stats": 129,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 129,
+                "id_stats_type": null,
+                "image_stats": "damage.webp",
+                "is_negative": 1,
+                "name_stats": "-Dommages Infligés",
+                "order": 43,
+                "order_stats": 1,
+                "parent_statistic_id": 126,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": 155,
+      "gfx_id": "5146",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5146,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Médecine",
+      "ui_position": 14,
+      "unlock_level": 55,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 159834,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#1] % Points de Vie",
+          "pivot": {
+            "foreign_type": 5145,
+            "id_effect": 159834
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 60,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 159834,
+              "id_spell_effect_value": 1333651,
+              "id_stats": 986,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 159835,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#1] % Soins reçus",
+          "pivot": {
+            "foreign_type": 5145,
+            "id_effect": 159835
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 25,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 159835,
+              "id_spell_effect_value": 1333652,
+              "id_stats": 1093,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178131,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_DMG_IN_PERCENT] -[#1] % Dommages infligés",
+          "pivot": {
+            "foreign_type": 5145,
+            "id_effect": 178131
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": 25,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178131,
+              "id_spell_effect_value": 1333653,
+              "id_stats": 129,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 129,
+                "id_stats_type": null,
+                "image_stats": "damage.webp",
+                "is_negative": 1,
+                "name_stats": "-Dommages Infligés",
+                "order": 43,
+                "order_stats": 1,
+                "parent_statistic_id": 126,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178130,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_HEAL_IN_PERCENT] -[#1] % Soins réalisés",
+          "pivot": {
+            "foreign_type": 5145,
+            "id_effect": 178130
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": 50,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178130,
+              "id_spell_effect_value": 1333654,
+              "id_stats": 1094,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 1094,
+                "id_stats_type": null,
+                "image_stats": "healing_done.webp",
+                "is_negative": 1,
+                "name_stats": "-Soins réalisés",
+                "order": 44,
+                "order_stats": 2,
+                "parent_statistic_id": 1095,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": 165,
+      "gfx_id": "5145",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5145,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Rock",
+      "ui_position": 17,
+      "unlock_level": 65,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178129,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_DMG_IN_PERCENT] [#1] % Dommages infligés",
+          "pivot": {
+            "foreign_type": 5144,
+            "id_effect": 178129
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 15,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178129,
+              "id_spell_effect_value": 1333655,
+              "id_stats": 126,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 126,
+                "id_stats_type": 4,
+                "image_stats": "damage.webp",
+                "is_negative": null,
+                "name_stats": "Dommages Infligés",
+                "order": 43,
+                "order_stats": 1,
+                "parent_statistic_id": null,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 165430,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#1] % Dommages infligés aux [fighter] ayant de l'Armure",
+          "pivot": {
+            "foreign_type": 5144,
+            "id_effect": 165430
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 10,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 165430,
+              "id_spell_effect_value": 1333656,
+              "id_stats": 1093,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 178128,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[#charac FINAL_HEAL_IN_PERCENT] -[#1] % Soins réalisés",
+          "pivot": {
+            "foreign_type": 5144,
+            "id_effect": 178128
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": 30,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 178128,
+              "id_spell_effect_value": 1333657,
+              "id_stats": 1094,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": {
+                "base_stats": 0,
+                "element": null,
+                "id_stats": 1094,
+                "id_stats_type": null,
+                "image_stats": "healing_done.webp",
+                "is_negative": 1,
+                "name_stats": "-Soins réalisés",
+                "order": 44,
+                "order_stats": 2,
+                "parent_statistic_id": 1095,
+                "related_multiplier": null,
+                "related_to": null,
+                "search_display": 0
+              },
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": 175,
+      "gfx_id": "5144",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5144,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Carnage",
+      "ui_position": 20,
+      "unlock_level": 75,
+      "wp_cost": 0
+    },
+    {
+      "ap_cost": 0,
+      "bq_cost": null,
+      "cast_diag": 0,
+      "cast_line": 0,
+      "cast_on_self": 0,
+      "dynamic_range": 0,
+      "effects": [
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174742,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4097,
+              "name_state": "Fluctuation"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Lorsque vous esquivez une [fighter] :\\n[pl]Avec pertes : [fighter] [st4097[#1]] (+[#1] Niv.)",
+          "pivot": {
+            "foreign_type": 5621,
+            "id_effect": 174742
+          },
+          "ui_position": 0,
+          "values": [
+            {
+              "base": 10,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 174742,
+              "id_spell_effect_value": 1333662,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174493,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4097,
+              "name_state": "Fluctuation"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "[pl]Sans perte : [fighter] [st4097[#1]] (+[#1] Niv.)",
+          "pivot": {
+            "foreign_type": 5621,
+            "id_effect": 174493
+          },
+          "ui_position": 1,
+          "values": [
+            {
+              "base": 15,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 174493,
+              "id_spell_effect_value": 1333663,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": -32513,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174491,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4097,
+              "name_state": "Fluctuation"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Lorsque vous taclez une [fighter] :\\n[pl][fighter] [st4097[#1]] (+[#1] Niv.)",
+          "pivot": {
+            "foreign_type": 5621,
+            "id_effect": 174491
+          },
+          "ui_position": 2,
+          "values": [
+            {
+              "base": 15,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 174491,
+              "id_spell_effect_value": 1333664,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        },
+        {
+          "container_max_level": 32767,
+          "container_min_level": 0,
+          "from_evolution": 0,
+          "id_effect": 174744,
+          "inner_ar": [],
+          "inner_spells": [],
+          "inner_states": [
+            {
+              "id_state": 4097,
+              "name_state": "Fluctuation"
+            }
+          ],
+          "is_critical": 0,
+          "is_use_effect": 0,
+          "name_effect": "Aux [fighter] terminant leur tour à votre contact :\\n[pl][fighter] [st4097[#1]] (+[#1] Niv.)",
+          "pivot": {
+            "foreign_type": 5621,
+            "id_effect": 174744
+          },
+          "ui_position": 3,
+          "values": [
+            {
+              "base": 20,
+              "damage": null,
+              "evolution": 0,
+              "id_effect": 174744,
+              "id_spell_effect_value": 1333665,
+              "id_stats": 304,
+              "offset": 0,
+              "random_number": 0,
+              "ratio": null,
+              "statistics": null,
+              "will_calculate_damage": 0,
+              "will_calculate_heal": 0
+            }
+          ]
+        }
+      ],
+      "evolution_level": 185,
+      "gfx_id": "5621",
+      "id_breed": 0,
+      "id_element": null,
+      "id_spell": 5621,
+      "is_passive": 1,
+      "is_zone": 0,
+      "line_of_sight": 0,
+      "max_range": 0,
+      "min_range": 0,
+      "mp_cost": 0,
+      "name_spell": "Fluctuation",
+      "ui_position": 22,
+      "unlock_level": 80,
+      "wp_cost": 0
+    }
+  ]
+}
