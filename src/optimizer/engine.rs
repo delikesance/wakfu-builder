@@ -1,4 +1,4 @@
-use crate::models::{Equipment, Effect};
+use crate::models::Equipment;
 use std::collections::{HashMap, HashSet};
 use clap::ValueEnum;
 
@@ -13,21 +13,22 @@ pub enum Element { Fire, Earth, Water, Air, All }
 
 #[derive(Debug, Clone, Default)]
 pub struct StatVector {
-    pub values: [f32; 20],
+    pub values: [f32; 22],
 }
 
 impl StatVector {
     pub fn get(&self, id: i32) -> f32 {
         let idx = self.id_to_idx(id);
-        if idx < 20 { self.values[idx] } else { 0.0 }
+        if idx < self.values.len() { self.values[idx] } else { 0.0 }
     }
     pub fn add_assign(&mut self, other: &StatVector) {
-        for i in 0..20 { self.values[i] += other.values[i]; }
+        for i in 0..22 { self.values[i] += other.values[i]; }
     }
     fn id_to_idx(&self, id: i32) -> usize {
         match id {
             20 => 0, 31 => 1, 41 => 2, 80 => 3, 120 => 4, 122 => 5, 123 => 6, 124 => 7, 125 => 8,
-            1052 => 9, 1053 => 10, 180 => 11, 150 => 12, 160 => 13, 1068 => 14, 1051 => 15, 1054 => 16, 173 => 17, 1055 => 18, 171 => 19, _ => 19,
+            1052 => 9, 1053 => 10, 180 => 11, 150 => 12, 160 => 13, 1068 => 14, 1051 => 15, 1054 => 16, 173 => 17, 1055 => 18, 171 => 19,
+            149 => 20, 175 => 21, _ => 22,
         }
     }
 }
@@ -97,6 +98,7 @@ impl Optimizer {
 
     /// Global Enchantment Solver
     /// Given a build, finds the absolute best allocation of 40 sockets to maximize the total build score.
+    /// Considers ALL sockets jointly (global), not per-item independently.
     pub fn optimize_global_enchantment(&self, build: &[Equipment], profile: &BuildProfile) -> (StatVector, Vec<(i32, i32)>) {
         let mut base_v = StatVector::default();
         for item in build {
@@ -104,60 +106,57 @@ impl Optimizer {
         }
 
         let enchantment_stats = [120, 1052, 1053, 1055, 149, 180, 173, 175, 171, 82, 83, 84, 85, 20, 26];
-        let mut final_ench_v = StatVector::default();
-        let mut recommendations = Vec::new();
+        let mut best_total_gain = 0.0_f32;
+        let mut best_alloc: Vec<(i32, i32)> = Vec::new();
 
-        for item in build {
-            if [646, 112, 189, 582, 611].contains(&item.id_type) {
-                recommendations.push((item.id, 0));
-                continue;
-            }
-            
-            let elvl = self.get_enchantment_max_level(item.level);
-            let mut best_stat = 120;
-            let mut best_gain = -1.0;
-
-            for &stat in &enchantment_stats {
+        for &stat in &enchantment_stats {
+            let mut gains: Vec<(f32, i32)> = Vec::new();
+            for item in build {
+                if [646, 112, 189, 582, 611].contains(&item.id_type) { continue; }
+                let elvl = self.get_enchantment_max_level(item.level);
                 let mut val = self.get_enchantment_value(stat, elvl) * 4.0;
                 if self.is_stat_doubled_on_slot(stat, item.id_type) { val *= 2.0; }
-                
                 let gain = val * profile.weights.get(&stat).cloned().unwrap_or(0.1);
-                if gain > best_gain {
-                    best_gain = gain;
-                    best_stat = stat;
-                }
+                gains.push((gain, item.id));
             }
-
-            let mut val = self.get_enchantment_value(best_stat, elvl) * 4.0;
-            if self.is_stat_doubled_on_slot(best_stat, item.id_type) { val *= 2.0; }
-            
-            let idx = final_ench_v.id_to_idx(best_stat);
-            if idx < 20 { final_ench_v.values[idx] += val; }
-            recommendations.push((item.id, best_stat));
+            gains.sort_by(|a, b| b.0.partial_cmp(&a.0).unwrap_or(std::cmp::Ordering::Equal));
+            let total_gain: f32 = gains.iter().map(|(g, _)| g).sum();
+            if total_gain > best_total_gain {
+                best_total_gain = total_gain;
+                best_alloc = gains.into_iter().map(|(_, item_id)| (item_id, stat)).collect();
+            }
         }
 
-        final_ench_v.add_assign(&base_v);
-        (final_ench_v, recommendations)
+        // Build final StatVector from best global allocation
+        let mut final_ench_v = base_v;
+        for (item_id, stat_id) in &best_alloc {
+            if let Some(item) = build.iter().find(|i| i.id == *item_id) {
+                let elvl = self.get_enchantment_max_level(item.level);
+                let mut val = self.get_enchantment_value(*stat_id, elvl) * 4.0;
+                if self.is_stat_doubled_on_slot(*stat_id, item.id_type) { val *= 2.0; }
+                let idx = final_ench_v.id_to_idx(*stat_id);
+                if idx < final_ench_v.values.len() { final_ench_v.values[idx] += val; }
+            }
+        }
+
+        (final_ench_v, best_alloc)
     }
 
-    fn get_item_base_vector(&self, item: &Equipment, profile: &BuildProfile) -> StatVector {
+    fn get_item_base_vector(&self, item: &Equipment, _profile: &BuildProfile) -> StatVector {
         let mut v = StatVector::default();
-        let mut gen_m = 0.0;
         for e in &item.effects {
             for val in &e.values {
                 if let Some(s) = &val.statistics {
                     let id = s.id_stats;
                     let idx = v.id_to_idx(id);
-                    if id == 120 { gen_m += val.damage; }
-                    else if id == 1068 {
+                    if id == 1068 {
                         for i in 5..=8 { v.values[i] += val.damage; }
-                    } else if idx < 20 {
+                    } else if idx < v.values.len() {
                         v.values[idx] += val.damage;
                     }
                 }
             }
         }
-        for i in 5..=8 { v.values[i] += gen_m; }
         v
     }
 
@@ -181,9 +180,7 @@ impl Optimizer {
         }
 
         let mut reduced: HashMap<i32, Vec<(Equipment, StatVector)>> = HashMap::new();
-        let mut dims: HashSet<i32> = profile.weights.keys().cloned().collect();
-        for &d in &[31, 41, 80, 122, 123, 124, 125, 160] { dims.insert(d); }
-        let dims: Vec<i32> = dims.into_iter().collect();
+        let dims: Vec<i32> = vec![20, 31, 41, 80, 120, 122, 123, 124, 125, 1052, 1053, 180, 150, 149, 173, 175, 171, 1055, 1051, 1054, 26];
 
         for (t, items) in candidates {
             let mut pool = Vec::new();
@@ -194,6 +191,7 @@ impl Optimizer {
                     let mut b_better_or_equal = true; let mut b_strictly_better = false;
                     for &d in &dims {
                         let idx = v_a.id_to_idx(d);
+                        if idx >= v_a.values.len() { continue; }
                         if v_b.values[idx] < v_a.values[idx] { b_better_or_equal = false; break; }
                         if v_b.values[idx] > v_a.values[idx] { b_strictly_better = true; }
                     }
@@ -217,7 +215,7 @@ impl Optimizer {
         for &t in &[134, 120, 138, 132, 136, 133, 103, 119, 582, 646, 519, 518, 112, 189] {
             let mut mv = StatVector::default();
             if let Some(items) = reduced.get(&t) {
-                for (_, v) in items { for d in 0..20 { mv.values[d] = mv.values[d].max(v.values[d]); } }
+                for (_, v) in items { for d in 0..22 { mv.values[d] = mv.values[d].max(v.values[d]); } }
             }
             max_p.insert(t, mv);
         }
@@ -259,10 +257,8 @@ impl Optimizer {
             return;
         }
 
-        let (r_s, _r_ap, _r_mp) = rem_p[depth];
-        // Heuristic pruning (slightly more complex with global enchantment, but still safe as rem_s includes max potential)
-        if cur_s + r_s + (40.0 * 66.0) <= *best_s && *best_s > f32::MIN { return; }
-
+        let (_r_s, _r_ap, _r_mp) = rem_p[depth];
+        // Pruning temporairement désactivé (heuristic broken, see G2 fix)
         let st = slots[depth]; let mut branched = false;
         if let Some(items) = cand.get(&st) {
             for (item, v) in items {
@@ -276,6 +272,24 @@ impl Optimizer {
             }
         }
         if !branched { self.dfs(slots, depth+1, cand, rem_p, prof, cur, cur_v, used, has_e, has_r, cur_s, best_b, best_s); }
+    }
+
+    pub fn get_socket_potential(&self, item: &Equipment, profile: &BuildProfile) -> Vec<(i32, f32)> {
+        if [646, 112, 189, 582, 611].contains(&item.id_type) {
+            return Vec::new();
+        }
+        let enchantment_stats = [120, 1052, 1053, 1055, 149, 180, 173, 175, 171, 20, 26];
+        let elvl = self.get_enchantment_max_level(item.level);
+        let mut results: Vec<(i32, f32)> = Vec::new();
+        for &stat in &enchantment_stats {
+            let mut val = self.get_enchantment_value(stat, elvl) * 4.0;
+            if self.is_stat_doubled_on_slot(stat, item.id_type) { val *= 2.0; }
+            let gain = val * profile.weights.get(&stat).cloned().unwrap_or(0.1);
+            results.push((stat, gain));
+        }
+        results.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal));
+        results.truncate(1);
+        results
     }
 
     pub fn aggregate_stats(&self, build: &[Equipment], profile: &BuildProfile) -> HashMap<i32, f32> {

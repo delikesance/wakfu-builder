@@ -59,15 +59,16 @@ async fn main() -> Result<()> {
     let args = Args::parse();
 
     // Ensure data is cached
-    let scraper = scraper::Scraper::new();
-    if !std::path::Path::new("data/equipment.json").exists() {
+    let scraper = scraper::Scraper::new()?;
+    let data_dir = scraper::ensure_data_dir()?;
+    if !data_dir.join("equipment.json").exists() {
         println!("No equipment cache found. Scraping from ZenithWakfu...");
         let equipment = scraper.fetch_all_equipment().await?;
         scraper.save_cache(&equipment, "equipment.json")?;
         println!("Saved {} items to cache.", equipment.len());
     }
 
-    if args.cli || args.level.is_some() || args.role.is_some() || args.mode.is_some() || args.min_ap.is_some() {
+    if args.cli {
         run_cli(args).await?;
     } else {
         run_tui().await?;
@@ -90,7 +91,8 @@ async fn run_cli(args: Args) -> Result<()> {
     println!("Config: Level {}, Role {:?}, Mode {:?}, Range {:?}, Element {:?}", level, role, mode, range, element);
     println!("Constraints: >= {} AP | >= {} MP | >= {} Res", min_ap, min_mp, min_res);
 
-    let file = std::fs::File::open("data/equipment.json")?;
+    let data_dir = scraper::ensure_data_dir()?;
+    let file = std::fs::File::open(data_dir.join("equipment.json"))?;
     let reader = std::io::BufReader::new(file);
     let items: Vec<models::Equipment> = serde_json::from_reader(reader)?;
 
@@ -177,6 +179,15 @@ async fn run_cli(args: Args) -> Result<()> {
     Ok(())
 }
 
+struct TerminalGuard;
+impl Drop for TerminalGuard {
+    fn drop(&mut self) {
+        let _ = disable_raw_mode();
+        let _ = execute!(io::stdout(), LeaveAlternateScreen, DisableMouseCapture);
+        let _ = crossterm::execute!(std::io::stdout(), crossterm::cursor::Show);
+    }
+}
+
 async fn run_tui() -> Result<()> {
     // Setup terminal
     enable_raw_mode()?;
@@ -185,19 +196,12 @@ async fn run_tui() -> Result<()> {
     let backend = CrosstermBackend::new(stdout);
     let mut terminal = Terminal::new(backend)?;
 
+    let _guard = TerminalGuard;
+
     let mut app = App::new();
 
     // Run app
     let res = run_app_tui(&mut terminal, &mut app).await;
-
-    // Restore terminal
-    disable_raw_mode()?;
-    execute!(
-        terminal.backend_mut(),
-        LeaveAlternateScreen,
-        DisableMouseCapture
-    )?;
-    terminal.show_cursor()?;
 
     if let Err(err) = res {
         println!("{:?}", err)
@@ -211,13 +215,27 @@ async fn run_app_tui<B: ratatui::backend::Backend>(
     app: &mut App,
 ) -> Result<()> {
     // Load cached items into app initially
-    if std::path::Path::new("data/equipment.json").exists() {
-        let file = std::fs::File::open("data/equipment.json")?;
+    let data_dir = scraper::ensure_data_dir()?;
+    if data_dir.join("equipment.json").exists() {
+        let file = std::fs::File::open(data_dir.join("equipment.json"))?;
         let reader = std::io::BufReader::new(file);
         app.items = serde_json::from_reader(reader)?;
     }
 
     loop {
+        // Check background optimization completion
+        if app.state == tui::app::AppState::Optimizing {
+            if let Some(ref handle) = app.optimize_handle {
+                let build_ready = handle.try_lock().ok().and_then(|mut guard| guard.take());
+                if let Some(build) = build_ready {
+                    app.best_build = build;
+                    app.optimize_handle = None;
+                    app.optimize_stats_handle = None;
+                    app.state = tui::app::AppState::Results;
+                }
+            }
+        }
+
         terminal.draw(|f| tui::ui::render(f, app))?;
 
         if event::poll(std::time::Duration::from_millis(100))? {
@@ -232,13 +250,30 @@ async fn run_app_tui<B: ratatui::backend::Backend>(
                         KeyCode::Char(' ') => {
                             if app.state == tui::app::AppState::Setup {
                                 app.state = tui::app::AppState::Optimizing;
-                                // Use default constraints for TUI
-                                let profile = optimizer::BuildProfile::new_with_constraints(app.role, app.mode, app.range, app.element, 10, 4, 0.0);
-                                let opt = optimizer::Optimizer::new(app.items.clone());
-                                let final_items = opt.find_perfect_build(app.level, &profile);
-                                app.best_build = final_items;
-                                app.state = tui::app::AppState::Results;
-                            } else {
+                                let items = app.items.clone();
+                                let role = app.role;
+                                let mode = app.mode;
+                                let range_val = app.range;
+                                let element = app.element;
+                                let level = app.level;
+
+                                let result = std::sync::Arc::new(std::sync::Mutex::new(None));
+                                let total_stats = std::sync::Arc::new(std::sync::Mutex::new(None));
+                                let result_clone = result.clone();
+                                let total_stats_clone = total_stats.clone();
+
+                                std::thread::spawn(move || {
+                                    let profile = optimizer::BuildProfile::new_with_constraints(role, mode, range_val, element, 10, 4, 0.0);
+                                    let opt = optimizer::Optimizer::new(items);
+                                    let final_items = opt.find_perfect_build(level, &profile);
+                                    let stats = opt.aggregate_stats(&final_items, &profile);
+                                    *result_clone.lock().unwrap() = Some(final_items);
+                                    *total_stats_clone.lock().unwrap() = Some(stats);
+                                });
+
+                                app.optimize_handle = Some(result);
+                                app.optimize_stats_handle = Some(total_stats);
+                            } else if app.state == tui::app::AppState::Results {
                                 app.state = tui::app::AppState::Setup;
                             }
                         }

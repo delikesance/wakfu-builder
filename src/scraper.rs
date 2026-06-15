@@ -1,16 +1,20 @@
 use anyhow::Result;
 use reqwest::header::{HeaderMap, HeaderValue, USER_AGENT, ACCEPT, REFERER};
 use crate::models::{Equipment, Spell};
-use std::fs::File;
-use std::io::Write;
-use std::path::Path;
+use std::path::PathBuf;
 
 pub struct Scraper {
     client: reqwest::Client,
 }
 
+pub fn ensure_data_dir() -> Result<PathBuf> {
+    let dir = std::env::current_dir()?.join("data");
+    std::fs::create_dir_all(&dir)?;
+    Ok(dir)
+}
+
 impl Scraper {
-    pub fn new() -> Self {
+    pub fn new() -> Result<Self> {
         let mut headers = HeaderMap::new();
         headers.insert(USER_AGENT, HeaderValue::from_static("Mozilla/5.0 (X11; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0"));
         headers.insert(ACCEPT, HeaderValue::from_static("application/json, text/plain, */*"));
@@ -18,10 +22,11 @@ impl Scraper {
         
         let client = reqwest::Client::builder()
             .default_headers(headers)
-            .build()
-            .unwrap();
+            .connect_timeout(std::time::Duration::from_secs(10))
+            .timeout(std::time::Duration::from_secs(30))
+            .build()?;
             
-        Self { client }
+        Ok(Self { client })
     }
 
     pub async fn fetch_all_equipment(&self) -> Result<Vec<Equipment>> {
@@ -36,30 +41,38 @@ impl Scraper {
                 to_skip
             );
 
-            let resp = self.client.get(&url)
-                .header("X-Requested-With", "XMLHttpRequest")
-                .send()
-                .await?
-                .json::<Vec<Equipment>>()
-                .await?;
-
-            if resp.is_empty() {
-                break;
+            let mut last_err = None;
+            for attempt in 1..=3 {
+                match self.client.get(&url)
+                    .header("X-Requested-With", "XMLHttpRequest")
+                    .send()
+                    .await
+                {
+                    Ok(resp) => {
+                        let equipment: Vec<Equipment> = resp.json().await?;
+                        if equipment.is_empty() {
+                            return Ok(all_equipment);
+                        }
+                        let count = equipment.len();
+                        all_equipment.extend(equipment);
+                        if count < limit {
+                            return Ok(all_equipment);
+                        }
+                        to_skip += limit;
+                        tokio::time::sleep(std::time::Duration::from_millis(500)).await;
+                        break;
+                    }
+                    Err(e) => {
+                        println!("Attempt {} failed: {}. Retrying in 2s...", attempt, e);
+                        last_err = Some(e);
+                        tokio::time::sleep(std::time::Duration::from_secs(2)).await;
+                    }
+                }
             }
-
-            let count = resp.len();
-            all_equipment.extend(resp);
-            
-            if count < limit {
-                break;
+            if let Some(e) = last_err {
+                return Err(e.into());
             }
-
-            to_skip += limit;
-            // Respectful delay
-            tokio::time::sleep(std::time::Duration::from_millis(500)).await;
         }
-
-        Ok(all_equipment)
     }
 
     pub async fn fetch_huppermage_spells(&self) -> Result<serde_json::Value> {
@@ -74,10 +87,12 @@ impl Scraper {
     }
 
     pub fn save_cache<T: serde::Serialize>(&self, data: &T, filename: &str) -> Result<()> {
-        let path = Path::new("data").join(filename);
-        let mut file = File::create(path)?;
+        let dir = ensure_data_dir()?;
+        let path = dir.join(filename);
+        let tmp_path = dir.join(format!(".{}.tmp", filename));
         let json = serde_json::to_string_pretty(data)?;
-        file.write_all(json.as_bytes())?;
+        std::fs::write(&tmp_path, json)?;
+        std::fs::rename(&tmp_path, &path)?;
         Ok(())
     }
 }

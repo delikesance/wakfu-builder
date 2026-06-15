@@ -16,3 +16,6 @@
 
 # Debug logs
 *.log
+
+# Cache directory
+data/

@@ -1,5 +1,7 @@
 use crate::optimizer::{Role, Mode, Range, Element};
 use crate::models::Equipment;
+use std::sync::{Arc, Mutex};
+use std::collections::HashMap;
 
 #[derive(PartialEq)]
 pub enum AppState {
@@ -18,6 +20,8 @@ pub struct App {
     pub selected_index: usize,
     pub items: Vec<Equipment>,
     pub best_build: Vec<Equipment>,
+    pub optimize_handle: Option<Arc<Mutex<Option<Vec<Equipment>>>>>,
+    pub optimize_stats_handle: Option<Arc<Mutex<Option<HashMap<i32, f32>>>>>,
 }
 
 impl App {
@@ -32,6 +36,8 @@ impl App {
             selected_index: 0,
             items: Vec::new(),
             best_build: Vec::new(),
+            optimize_handle: None,
+            optimize_stats_handle: None,
         }
     }
 
